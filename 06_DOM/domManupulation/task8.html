@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clear input field using button</title>
+</head>
+<body>
+    <input type="text" id="userInput" placeholder="Enter your number" oninput="showValue()">
+    <button onclick="clearData()">Clear</button>
+    <p id="output"></p>
+
+    <script>
+        function showValue() {
+            const value = document.getElementById("userInput").value ;
+            document.getElementById("output").textContent = "your input is: " + value
+        }
+
+        function clearData() {
+            const input = document.getElementById("userInput");
+            const output = ""
+            document.getElementById("output").textContent = output.value;
+            
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide a paragraph using button</title>
+</head>
+<body>
+    <p id="para">Lorem ipsum dolor sit.</p>
+    <button onclick="hideParagraph()">Hide Paragraph</button>
+
+    <script>
+        function hideParagraph() {
+            document.getElementById("para").style.display = "none"
+        }
+    </script>
+</body>
+</html>

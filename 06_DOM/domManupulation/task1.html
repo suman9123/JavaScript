@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change heading text using button</title>
+</head>
+
+<body>
+    <h1 id="heading">Orginal Heading</h1>
+    <button onclick="changeHeading()">Change Heading</button>
+
+    <script>
+        function changeHeading() {
+            const heading = document.getElementById("heading");
+            heading.textContent = heading.textContent === "Original Heading"
+                ? "Heading Changed!"
+                : "Original Heading";
+        }
+    </script>
+</body>
+
+</html>

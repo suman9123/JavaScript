@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show a hidden paragraph using button</title>
+</head>
+<body>
+    <p id="para" style="display:none">Lorem ipsum dolor sit amet.</p>
+    <button onclick="showParagraph()">Show Paragraph</button>
+
+    <script>
+        function showParagraph() {
+            document.getElementById("para").style.display = "block"
+        }
+    </script>
+</body>
+</html>

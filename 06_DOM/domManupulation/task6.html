@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change image using button</title>
+</head>
+<body>
+    <img id="myImg" src="https://picsum.photos/id/10/300/200" alt="Image">
+
+    <br><br>
+    <button onclick="changeImage()">Change Image</button>
+
+    <script>
+        function changeImage() {
+            document.getElementById("myImg").src = "https://picsum.photos/id/20/300/200"
+        }
+    </script>
+</body>
+</html>

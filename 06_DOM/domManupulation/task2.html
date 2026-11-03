@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change heading color using button</title>
+</head>
+<body>
+    <h1 id="heading">Heading</h1>
+    <button onclick="colorChange()">Change Color</button>
+
+    <script>
+        function colorChange() {
+           const color = document.getElementById("heading");
+           heading.style.color = heading.style.color === "red" ? "green" : "red";
+        }
+    </script>
+</body>
+</html>

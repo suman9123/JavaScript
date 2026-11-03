@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change font size using button</title>
+</head>
+<body>
+    <h1 id="heading">Suman Chakraborty</h1>
+    <button onclick="changeFontSize(5)">Increse +</button>
+    <button onclick="changeFontSize(-5)">Decrese +</button>
+
+    <script>
+        let size = 20;
+        function changeFontSize(num) {
+            size = size + num
+           document.getElementById("heading").style.fontSize= size + "px" ;
+        }
+    </script>
+</body>
+</html>
